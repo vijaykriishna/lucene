@@ -33,6 +33,12 @@ dependencies {
   moduleTestImplementation(deps.junit, {
     exclude group: "org.hamcrest"
   })
+  moduleTestImplementation(deps.junit.jupiter.api, {
+    exclude group: "org.hamcrest"
+  })
+  moduleTestImplementation(deps.junit.vintage.engine, {
+    exclude group: "org.hamcrest"
+  })
   moduleTestImplementation deps.hamcrest
   moduleTestImplementation deps.assertj
 }

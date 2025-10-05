@@ -28,6 +28,12 @@ dependencies {
   moduleApi (deps.junit, {
     exclude group: "org.hamcrest"
   })
+  moduleTestImplementation(deps.junit.jupiter.api, {
+    exclude group: "org.hamcrest"
+  })
+  moduleTestImplementation(deps.junit.vintage.engine, {
+    exclude group: "org.hamcrest"
+  })
   moduleApi deps.hamcrest
 
   moduleImplementation project(':lucene:codecs')

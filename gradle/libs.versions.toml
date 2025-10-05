@@ -34,6 +34,7 @@ jmh = "1.37"
 jts = "1.20.0"
 # unit tests
 junit = "4.13.2"
+junit5 = "6.0.0"
 # @keep Minimum gradle version to run the build
 minGradle = "9.1.0"
 # @keep This is the minimum required Java version.
@@ -83,6 +84,9 @@ jmh-annprocess = { module = "org.openjdk.jmh:jmh-generator-annprocess", version.
 jmh-core = { module = "org.openjdk.jmh:jmh-core", version.ref = "jmh" }
 jts = { module = "org.locationtech.jts:jts-core", version.ref = "jts" }
 junit = { module = "junit:junit", version.ref = "junit" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
+junit-vintage-engine = { module = "org.junit.vintage:junit-vintage-engine", version.ref = "junit5" }
+
 morfologik-polish = { module = "org.carrot2:morfologik-polish", version.ref = "morfologik" }
 morfologik-stemming = { module = "org.carrot2:morfologik-stemming", version.ref = "morfologik" }
 morfologik-ukrainian = { module = "ua.net.nlp:morfologik-ukrainian-search", version.ref = "morfologik-ukrainian" }
